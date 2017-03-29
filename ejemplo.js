@@ -26,7 +26,7 @@ $(document).ready(function() {
 			var li = document.createElement("li");
 			li.appendChild(document.createTextNode("History " + i + ": " + json.items.title));
 			ul.appendChild(li)
-			if(json.items.location.position !== undefined || json.items.location.position !== null){
+			if(typeof json.items.location.position !== "undefined"){
 				var subul = document.createElement("ul");
 				var subli1 = document.createElement("li");
 				var subli2 = document.createElement("li");
