@@ -27,7 +27,7 @@ $(document).ready(function() {
 			li.appendChild(document.createTextNode("History " + i + ": " + json.items.title));
 			ul.appendChild(li)
 			var check = "";
-			check = typeof(json.items.location.position);
+			check = typeof(json.items.location);
 			console.log(check);
 			if(typeof json.items.location != "undefined"){
 				var subul = document.createElement("ul");
