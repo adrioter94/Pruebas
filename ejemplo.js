@@ -26,15 +26,12 @@ $(document).ready(function() {
 			var li = document.createElement("li");
 			li.appendChild(document.createTextNode("History " + i + ": " + json.items[i].title));
 			ul.appendChild(li)
-			var check = "";
-			check = typeof(json.items[i].location);
-			console.log(check);
 			if(typeof json.items[i].location != "undefined"){
 				var subul = document.createElement("ul");
 				var subli1 = document.createElement("li");
 				var subli2 = document.createElement("li");
-				subli1.appendChild(document.createTextNode("Latitude: " + json.items.location[i].position.latitude));
-				subli2.appendChild(document.createTextNode("Longitude: " + json.items.location[i].position.longitude));
+				subli1.appendChild(document.createTextNode("Latitude: " + json.items[i].location.position.latitude));
+				subli2.appendChild(document.createTextNode("Longitude: " + json.items[i].location[i].position.longitude));
 				subul.appendChild(subli1);
 				subul.appendChild(subli2);
 			}
