@@ -24,17 +24,17 @@ $(document).ready(function() {
 		for(i = 0; i <= json.items.length; i++){
 			var ul = document.getElementById("list");
 			var li = document.createElement("li");
-			li.appendChild(document.createTextNode("History " + i + ": " + json.items.title));
+			li.appendChild(document.createTextNode("History " + i + ": " + json.items[i].title));
 			ul.appendChild(li)
 			var check = "";
-			check = typeof(json.items.location);
+			check = typeof(json.items[i].location);
 			console.log(check);
-			if(typeof json.items.location != "undefined"){
+			if(typeof json.items[i].location != "undefined"){
 				var subul = document.createElement("ul");
 				var subli1 = document.createElement("li");
 				var subli2 = document.createElement("li");
-				subli1.appendChild(document.createTextNode("Latitude: " + json.items.location.position.latitude));
-				subli2.appendChild(document.createTextNode("Longitude: " + json.items.location.position.longitude));
+				subli1.appendChild(document.createTextNode("Latitude: " + json.items.location[i].position.latitude));
+				subli2.appendChild(document.createTextNode("Longitude: " + json.items.location[i].position.longitude));
 				subul.appendChild(subli1);
 				subul.appendChild(subli2);
 			}
