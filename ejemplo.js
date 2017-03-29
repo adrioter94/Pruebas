@@ -24,8 +24,15 @@ $(document).ready(function() {
 		for(i = 0; i <= json.items.length; i++){
 			var ul = document.getElementById("list");
 			var li = document.createElement("li");
-			li.appendChild(document.createTextNode("Historia " + i));
-			ul.appendChild(li);
+			li.appendChild(document.createTextNode("History " + i + ": " + json.items.title));
+			ul.appendChild(li)
+			var subul = document.createElement("ul");
+			var subli1 = document.createElement("li");
+			var subli2 = document.createElement("li");
+			subli1.appendChild(document.createTextNode("Latitude: " + json.items.location.position.latitude);
+			subli2.appendChild(document.createTextNode("Longitude: " + json.items.location.position.longitude);
+			subul.appendChild(subli1);
+			subul.appendChild(subli2);
 		}
 	});
 });
