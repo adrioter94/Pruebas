@@ -28,6 +28,7 @@ $(document).ready(function() {
 			ul.appendChild(li)
 			if(typeof json.items[i].location != "undefined"){
 				var subul = document.createElement("ul");
+				li.appendChild(subul);
 				var subli1 = document.createElement("li");
 				var subli2 = document.createElement("li");
 				subli1.appendChild(document.createTextNode("Latitude: " + json.items[i].location.position.latitude));
