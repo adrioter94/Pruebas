@@ -18,7 +18,14 @@
 
 $(document).ready(function() {
 	$.getJSON( "ejemplo.json", function(json) {
-		console.log("Hola2");
+		console.log("Hola3");
 		console.log( "JSON Data: " + json.items.length);
+		var i = 0;
+		for(i = 0; i <= json.items.length; i++){
+			var ul = document.getElementById("list");
+			var li = document.createElement("li");
+			li.appendChild(document.createTextNode("Historia " + i));
+			ul.appendChild(li);
+		}
 	});
 });
