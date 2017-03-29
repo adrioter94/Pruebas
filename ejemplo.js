@@ -29,8 +29,8 @@ $(document).ready(function() {
 			var subul = document.createElement("ul");
 			var subli1 = document.createElement("li");
 			var subli2 = document.createElement("li");
-			subli1.appendChild(document.createTextNode("Latitude: " + json.items.location.position.latitude);
-			subli2.appendChild(document.createTextNode("Longitude: " + json.items.location.position.longitude);
+			subli1.appendChild(document.createTextNode("Latitude: " + json.items.location.position.latitude));
+			subli2.appendChild(document.createTextNode("Longitude: " + json.items.location.position.longitude));
 			subul.appendChild(subli1);
 			subul.appendChild(subli2);
 		}
