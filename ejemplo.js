@@ -18,7 +18,7 @@
 
 $(document).ready(function() {
 	$.getJSON( "ejemplo.json", function(json) {
-		console.log("Hola1");
-		console.log( "JSON Data: " + json.items);
+		console.log("Hola2");
+		console.log( "JSON Data: " + json.items.length);
 	});
 });
