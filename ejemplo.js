@@ -29,7 +29,7 @@ $(document).ready(function() {
 			var check = "";
 			check = typeof(json.items.location.position);
 			console.log(check);
-			if(typeof json.items.location.position != "undefined"){
+			if(typeof json.items.location != "undefined"){
 				var subul = document.createElement("ul");
 				var subli1 = document.createElement("li");
 				var subli2 = document.createElement("li");
