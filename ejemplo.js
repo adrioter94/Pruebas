@@ -18,6 +18,6 @@
 
 $(document).ready(function() {
 	$.getJSON( "ejemplo.json", function(json) {
-		console.log( "JSON Data: " + json.item);
+		console.log( "JSON Data: " + json.items);
 	});
 });
