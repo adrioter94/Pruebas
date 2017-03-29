@@ -31,7 +31,7 @@ $(document).ready(function() {
 				var subli1 = document.createElement("li");
 				var subli2 = document.createElement("li");
 				subli1.appendChild(document.createTextNode("Latitude: " + json.items[i].location.position.latitude));
-				subli2.appendChild(document.createTextNode("Longitude: " + json.items[i].location[i].position.longitude));
+				subli2.appendChild(document.createTextNode("Longitude: " + json.items[i].location.position.longitude));
 				subul.appendChild(subli1);
 				subul.appendChild(subli2);
 			}
