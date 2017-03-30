@@ -10,7 +10,7 @@ $(document).ready(function() {
 				console.log("1.-" + sentence);
 			});
 			console.log("2.-" + sentence);
-			$("sentence").html(sentence)
+			$("sentence").html(sentence);
 		});
 	});
 });
