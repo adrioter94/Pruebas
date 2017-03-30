@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
 	var sentence = "";
+	$("sentence").html("Holis");
 	$("#btn").click(function(){
 		sentence = "";
 		$.getJSON("frase_random.json", function(words){
@@ -12,5 +13,7 @@ $(document).ready(function() {
 			console.log("2.-" + sentence);
 			$("sentence").html(sentence);
 		});
+		console.log("3.-" + sentence);
 	});
+	console.log("4.-" + sentence);
 });
