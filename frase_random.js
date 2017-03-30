@@ -27,5 +27,8 @@ $(document).ready(function() {
 	$.getJSON("frase_random.json", function(json) {
 		words = json;
 	});
-	$("#btn").click(generate_sentence(words));
+	console.log(words);
+	$("#btn").click(function(){
+		generate_sentence(words);
+	});
 });
