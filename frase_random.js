@@ -12,9 +12,9 @@
     // $('#sentence').html(sentence.join(' '));
 // };
 
-function generate_sentence(){
+function generate_sentence(obj){
 	sentence = "";
-	$.each( words, function( key, value ) {
+	$.each( obj, function( key, value ) {
 			selection = Math.floor(Math.random() * value.length);
 			sentence += value[selection] + " ";
 		});
@@ -27,5 +27,5 @@ $(document).ready(function() {
 	$.getJSON("frase_random.json", function(json) {
 		words = json;
 	});
-	$("#btn").click(generate_sentence);
+	$("#btn").click(generate_sentence(words));
 });
