@@ -14,7 +14,8 @@
 
 $(document).ready(function() {
     $.getJSON("frase_random.json", function(words) {
-		console.log(words.length);
+		console.log(words);
+	    	console.log($.each(words);
 	// words_global = words;
 	// write_sentence();
     });
