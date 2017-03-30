@@ -23,7 +23,7 @@ function generate_sentence(obj){
 
 $(document).ready(function() {
 	var sentence = "";
-	var words = $.getJSON("frase_random.json").responseJSON;
+	var words = $.getJSON("frase_random.json");
 	console.log(words);
 	$("#btn").click(function(){
 		generate_sentence(words);
