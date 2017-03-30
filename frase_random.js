@@ -18,7 +18,7 @@ $(document).ready(function() {
 	    	var sentence = "";
 	    	$.each( words, function( key, value ) {
 		  selection = Math.floor(Math.random() * value.length);
-		  console.log( key + ": " + selection );
+		  console.log( key + ": " + selection + "-> " + value[selecetion] );
 		});
 	// words_global = words;
 	// write_sentence();
