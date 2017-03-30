@@ -12,16 +12,20 @@
     // $('#sentence').html(sentence.join(' '));
 // };
 
-$(document).ready(function() {
-	var sentence = "";
-	$.getJSON("frase_random.json", function(words) {
-		$.each( words, function( key, value ) {
+function generate_sentence(){
+	sentence = "";
+	$.each( words, function( key, value ) {
 			selection = Math.floor(Math.random() * value.length);
 			sentence += value[selection] + " ";
 		});
+	$("sentence").html(sentence)
+}
+
+$(document).ready(function() {
+	var sentence = "";
+	var words;
+	$.getJSON("frase_random.json", function(json) {
+		words = json;
 	});
-	
-	$("#btn").click(function(){
-		$('#sentence').html(sentence);
-	});
+	$("#btn").click(generate_sentence);
 });
