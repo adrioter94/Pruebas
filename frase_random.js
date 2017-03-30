@@ -24,7 +24,7 @@ function generate_sentence(obj){
 $(document).ready(function() {
 	var sentence = "";
 	var some = 2;
-	$.getJSON("frase_random.json", function(words)){
+	$.getJSON("frase_random.json", function(words){
 		console.log(some);
 	
 	});
