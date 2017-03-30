@@ -13,17 +13,15 @@
 // };
 
 $(document).ready(function() {
-    $.getJSON("frase_random.json", function(words) {
-		console.log(words);
-	    	var sentence = "";
-	    	$.each( words, function( key, value ) {
+	var sentence = "";
+	$.getJSON("frase_random.json", function(words) {
+		$.each( words, function( key, value ) {
 			selection = Math.floor(Math.random() * value.length);
 			sentence += value[selection] + " ";
-			console.log(sentence);
-			console.log( key + ": " + selection + "-> " + value[selection]);
 		});
-	// words_global = words;
-	// write_sentence();
-    });
-    //$("#sentence").click(write_sentence);
+	});
+	
+	$("#sentence").click(function(){
+		$('#sentence').html(sentence);
+	});
 });
