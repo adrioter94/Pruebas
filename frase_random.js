@@ -26,6 +26,7 @@ $(document).ready(function() {
 	var words;
 	$.getJSON("frase_random.json", function(json) {
 		words = json;
+		console.log(words);
 	});
 	console.log(words);
 	$("#btn").click(function(){
