@@ -15,9 +15,10 @@
 $(document).ready(function() {
     $.getJSON("frase_random.json", function(words) {
 		console.log(words);
+	    	var sentence = "";
 	    	$.each( words, function( key, value ) {
-		  console.log("2");
-		  console.log( key + ": " + value[0] );
+		  selection = Math.floor(Math.random() * value.length);
+		  console.log( key + ": " + selection );
 		});
 	// words_global = words;
 	// write_sentence();
