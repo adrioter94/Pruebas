@@ -26,9 +26,10 @@ $(document).ready(function() {
 	var some = 2;
 	$.getJSON("frase_random.json", function(words){
 		console.log(some);
-	
+		some = words;
+		console.log(some);
 	});
-	console.log(words);
+	console.log(some);
 	$("#btn").click(function(){
 		generate_sentence(words);
 	});
