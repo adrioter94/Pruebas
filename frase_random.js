@@ -21,7 +21,7 @@ $(document).ready(function() {
 		});
 	});
 	
-	$("#sentence").click(function(){
+	$("#btn").click(function(){
 		$('#sentence').html(sentence);
 	});
 });
